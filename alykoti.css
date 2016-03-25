@@ -22,9 +22,8 @@ body {
   margin: auto;
   min-height: 100%;
   background: transparent;
+  text-align:center;
 }
-
-
 .submitLogin1{
   box-sizing: border-box;
   width:300px;
@@ -42,12 +41,25 @@ body {
   width:300px;
   background-color:transparent;
   height:100px;
+  margin:0;
+}
+.buttonTest{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+  margin:0;
+} 
+
+.confirm{
+  border:solid;
+  max-width: 400px;
+  margin: auto;
+  min-height: 100%;
+  background: transparent;
+  text-align:center;
 }
 
-.login1{
-  border: solid;
-
-}
 header {
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
@@ -105,3 +117,6 @@ li .text {
     width: 150px;
     clear: both;
   }
+
+
+
