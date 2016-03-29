@@ -1,0 +1,57 @@
+<head>
+ 	<title>Smart home - Käyttöliittymät harkkatyö</title>
+ 	<meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
+	<!-- ReactFire -->
+	<script src="https://cdn.firebase.com/libs/reactfire/0.1.6/reactfire.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.27.1/react-bootstrap.js"></script>
+	
+  	<script src="jquery/external/jquery/jquery.js"></script>
+	<script src="jquery/jquery-ui.js"></script>
+	<link href="jquery/jquery-ui.css" rel="stylesheet">
+	<link href="alykoti.css" rel="stylesheet">
+	<script src="alykotiscript.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrap">
+	<img src="header.png"/>
+	<div id="content">	
+		<p id="advice">Please make adjustments to living room.</p>
+		<form>
+			<div class="adjustments label">Lights</div>
+			<div class="adjustments">
+				<div id="lights">
+			    	<input type="radio" id="lights_ON" name="lights"><label for="lights_ON">ON</label>
+			    	<input type="radio" id="lights_OFF" name="lights" checked="checked"><label for="lights_OFF">OFF</label>
+			    </div>
+			</div>
+			<div class="adjustments label">Stereos</div>
+			<div class="adjustments">
+				<div id="stereos">
+			    	<input type="radio" id="stereos_ON" name="stereos"><label for="stereos_ON">ON</label>
+			    	<input type="radio" id="stereos_OFF" name="stereos" checked="checked"><label for="stereos_OFF">OFF</label>
+			    </div>
+			</div>
+			<div class="adjustments label">Volume</div>
+			<div class="adjustments">
+				<div id="volume_slider"></div></td>
+				<input type="text" readonly id="volume">
+			</div>
+			<div class="adjustments label"><span>Temperature</span></div>
+			<div class="adjustments">
+				<div id="temp_slider"></div>
+				<input type="text" readonly id="temperature">
+			</div>
+		</form>
+	</div>
+</div> 
+
+</body>

@@ -1,1 +1,59 @@
-/* CSS declarations go here */
+body {
+	background-image:url("bg.jpg");
+}
+div {
+	/*border: 1px red solid;*/
+}
+a {
+	text-decoration:none;	
+	color:black;
+}
+#wrap {
+	width:70%; 
+	max-width:700px;
+	height:600px; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+.building {
+	width:200px;
+	float:left;
+	padding-left:50px;
+	padding-right:50px;
+	margin:3%;
+	text-align:center;
+}
+.room {
+	width:150px;
+	float:left;
+	margin:1%;
+	text-align:center;
+}
+#advice {
+	text-align:center;
+}
+.adjustments {
+	/*border:1px solid black;*/
+	display:table-cell;
+	vertical-align: middle;
+	width:400px;
+	float:left;
+	align:left;
+	height:40px;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+.label {
+	width:200px;
+}
+#temp_slider, #volume_slider {
+	width:70%;
+	float:left;
+}
+#volume, #temperature {
+	background:none;
+	border:none;
+	width:20%;
+	float:left;
+	margin-left:5%;
+}
