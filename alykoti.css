@@ -90,6 +90,28 @@ body {
   float:center;
 }
 
+.button-childrensroom{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+}
+
+.button-kitchenlivingroom{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+}
+
+.button-sauna{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+  margin:0;
+}
+
 header {
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
