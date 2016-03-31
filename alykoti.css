@@ -18,46 +18,76 @@ body {
 
 .container {
   border:solid;
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
   min-height: 100%;
   background: transparent;
   text-align:center;
 }
-.submitLogin1{
+.button-home{
   box-sizing: border-box;
   width:300px;
   background-color:transparent;
   height:100px;
 }
-.submitLogin2{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;
-}
-.submitLogin3{  
+.button-cottage{  
   box-sizing: border-box;
   width:300px;
   background-color:transparent;
   height:100px;
   margin:0;
 }
-.buttonTest{
+.button-adult{
   box-sizing: border-box;
   width:300px;
   background-color:transparent;
   height:100px;
-  margin:0;
-} 
+}
+.button-child{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;  
+}
+.button-admin{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;  
+}
 
-.confirm{
-  border:solid;
-  max-width: 400px;
-  margin: auto;
-  min-height: 100%;
-  background: transparent;
-  text-align:center;
+.button-takaisin{
+  float: right;
+  width:50px;
+}
+
+.button-lightsOn{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+}
+
+.button-oven{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+}
+
+.button-tv{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+}
+
+.slideri{
+  box-sizing: border-box;
+  width:300px;
+  background-color:transparent;
+  height:100px;
+  float:center;
 }
 
 header {
@@ -73,6 +103,7 @@ h1 {
   margin: 0;
   margin-bottom: 10px;
   text-align: center;
+  float: center;
 }
 
 h2 {
@@ -117,6 +148,3 @@ li .text {
     width: 150px;
     clear: both;
   }
-
-
-
