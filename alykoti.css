@@ -1,87 +1,36 @@
 body {
   font-family: sans-serif;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
-  background-attachment: fixed;
-
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  padding: 0;
-  margin: 0;
-
-  font-size: 14px;
+  background:url("bg.jpg") repeat;
 }
 
 .container {
-  border:solid;
-  max-width: 500px;
+  
+  width: 700px;
   margin: auto;
   min-height: 100%;
-  background: transparent;
   text-align:center;
 }
-.button-home{
+.button-building{
   box-sizing: border-box;
   width:300px;
-  background-color:transparent;
   height:100px;
 }
-.button-cottage{  
+.button-role{
   box-sizing: border-box;
   width:300px;
-  background-color:transparent;
   height:100px;
-  margin:0;
+  margin-left:100px;
+  margin-right:100px;
+  margin-bottom:20px;
 }
-.button-adult{
+.button-widget{
   box-sizing: border-box;
   width:300px;
-  background-color:transparent;
   height:100px;
+  margin-left:100px;
+  margin-right: 100px;
+  margin-bottom:20px;
 }
-.button-child{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;  
-}
-.button-admin{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;  
-}
-
-.button-takaisin{
-  float: right;
-  width:50px;
-}
-
-.button-lightsOn{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;
-}
-
-.button-oven{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;
-}
-
-.button-tv{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;
-}
-
 .slideri{
   box-sizing: border-box;
   width:300px;
@@ -89,35 +38,33 @@ body {
   height:100px;
   float:center;
 }
-
-.button-childrensroom{
+.button-room{
   box-sizing: border-box;
   width:300px;
-  background-color:transparent;
   height:100px;
+  margin-left:100px;
+  margin-right:100px;
+  margin-bottom:20px;
 }
 
-.button-kitchenlivingroom{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;
+.building{
+  float:center; 
+  margin:20px; 
+  cursor:pointer;
 }
 
-.button-sauna{
-  box-sizing: border-box;
-  width:300px;
-  background-color:transparent;
-  height:100px;
-  margin:0;
+.bakki{
+  width:50px;
+  height:50px;
+  float:right;
+  cursor:pointer;
+}
+td {
+  border:1px solid black;
+  width:20%;
+  text-align:left;
 }
 
-header {
-  background: #d2edf4;
-  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
-  padding: 20px 15px 15px 15px;
-  position: relative;
-}
 
 
 h1 {
@@ -139,25 +86,6 @@ form {
   margin-top: 10px;
   margin-bottom: -10px;
   position: relative;
-}
-
-
-ul {
-  margin: 0;
-  padding: 0;
-  background: white;
-}
-
-
-li {
-  position: relative;
-  list-style: none;
-  padding: 15px;
-  border-bottom: #eee solid 1px;
-}
-
-li .text {
-  margin-left: 10px;
 }
 
 @media (max-width: 600px) {
