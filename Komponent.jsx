@@ -99,7 +99,7 @@ SmartHouseSelectionAdult = React.createClass({
 						className="building"
 						onClick={()=>this.clickHandler(5, home, !isAdministrator)}
 						/>
-					<img src="/cottage.png"
+					<img src="/cottage_uc.png"
 					className="building" />
 				</div>
 			</header>
@@ -283,6 +283,100 @@ AdminView = React.createClass({
 								<input type="radio" name="onoff7"/>
 							</td>
 						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="3">
+								<b>Cottage - Under construction</b>
+							</td>
+							<td>
+								<input disabled type="radio" name="onoff1"
+								checked
+								 />
+								<input disabled type="radio" name="onoff1"
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="5">
+								<b>Child</b>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="3">
+								<b>Home</b>
+							</td>
+							<td>
+								<input type="radio" name="onoff1"
+								checked
+								 />
+								<input type="radio" name="onoff1"
+
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="2">&nbsp;</td>
+							<td colSpan="2">Children's room</td>
+							<td>
+								<input type="radio" name="onoff2"
+								checked/>
+								<input type="radio" name="onoff2"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>Lights</td>
+							<td>
+								<input type="radio" name="onoff3" checked />
+								<input type="radio" name="onoff3"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="2">&nbsp;</td>
+							<td colSpan="2">Kitchen/Living room</td>
+							<td>
+								<input type="radio" name="onoff4" />
+								<input type="radio" name="onoff4" checked/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>Lights</td>
+							<td>
+								<input type="radio" name="onoff5" />
+								<input type="radio" name="onoff5" checked/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>Oven</td>
+							<td>
+								<input type="radio" name="onoff6" />
+								<input type="radio" name="onoff6" checked />
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>TV</td>
+							<td>
+								<input type="radio" name="onoff7" />
+								<input type="radio" name="onoff7" checked/>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="3">
+								<b>Cottage - Under construction</b>
+							</td>
+							<td>
+								<input disabled type="radio" name="onoff1"
+								 />
+								<input disabled type="radio" name="onoff1" checked
+								/>
+							</td>
+						</tr>
+
 					</table>
 					</form>
 			</div>
@@ -513,15 +607,14 @@ AdultRoomView = React.createClass({
 										/></h1>
 										<h2>Logged in as adult</h2>
 						<span className="testing">
-       			 			<button className="button-room"
+       			 			<img src="childrenroom.png" className="button-room"
        			 				onClick={()=> this.clickHandler(3, lastenhuone, !isAdministrator)}
        			 				
-       			 			>Children's room
-							</button>
-							<button className="button-room"
+       			 			/>
+						
+							<img src="livingroom.png" className="button-room"
 								onClick={()=> this.clickHandler(4, sekahuone, !isAdministrator)}
-							>Kitchen/living room 
-							</button>
+							/>
 							
 						</span>
        			</header>
