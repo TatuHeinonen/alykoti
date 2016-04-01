@@ -289,10 +289,10 @@ AdminView = React.createClass({
 								<b>Cottage - Under construction</b>
 							</td>
 							<td>
-								<input disabled type="radio" name="onoff1"
+								<input disabled type="radio" name="onoff8"
 								checked
 								 />
-								<input disabled type="radio" name="onoff1"
+								<input disabled type="radio" name="onoff8"
 								/>
 							</td>
 						</tr>
@@ -307,10 +307,10 @@ AdminView = React.createClass({
 								<b>Home</b>
 							</td>
 							<td>
-								<input type="radio" name="onoff1"
+								<input type="radio" name="onoff9"
 								checked
 								 />
-								<input type="radio" name="onoff1"
+								<input type="radio" name="onoff9"
 
 								/>
 							</td>
@@ -319,49 +319,49 @@ AdminView = React.createClass({
 							<td colSpan="2">&nbsp;</td>
 							<td colSpan="2">Children's room</td>
 							<td>
-								<input type="radio" name="onoff2"
+								<input type="radio" name="onoff10"
 								checked/>
-								<input type="radio" name="onoff2"/>
+								<input type="radio" name="onoff10"/>
 							</td>
 						</tr>
 						<tr>
 							<td colSpan="3">&nbsp;</td>
 							<td>Lights</td>
 							<td>
-								<input type="radio" name="onoff3" checked />
-								<input type="radio" name="onoff3"/>
+								<input type="radio" name="onoff11" checked />
+								<input type="radio" name="onoff11"/>
 							</td>
 						</tr>
 						<tr>
 							<td colSpan="2">&nbsp;</td>
 							<td colSpan="2">Kitchen/Living room</td>
 							<td>
-								<input type="radio" name="onoff4" />
-								<input type="radio" name="onoff4" checked/>
+								<input type="radio" name="onoff12" />
+								<input type="radio" name="onoff12" checked/>
 							</td>
 						</tr>
 						<tr>
 							<td colSpan="3">&nbsp;</td>
 							<td>Lights</td>
 							<td>
-								<input type="radio" name="onoff5" />
-								<input type="radio" name="onoff5" checked/>
+								<input type="radio" name="onoff13" />
+								<input type="radio" name="onoff13" checked/>
 							</td>
 						</tr>
 						<tr>
 							<td colSpan="3">&nbsp;</td>
 							<td>Oven</td>
 							<td>
-								<input type="radio" name="onoff6" />
-								<input type="radio" name="onoff6" checked />
+								<input type="radio" name="onoff14" />
+								<input type="radio" name="onoff14" checked />
 							</td>
 						</tr>
 						<tr>
 							<td colSpan="3">&nbsp;</td>
 							<td>TV</td>
 							<td>
-								<input type="radio" name="onoff7" />
-								<input type="radio" name="onoff7" checked/>
+								<input type="radio" name="onoff15" />
+								<input type="radio" name="onoff15" checked/>
 							</td>
 						</tr>
 						<tr>
@@ -370,9 +370,9 @@ AdminView = React.createClass({
 								<b>Cottage - Under construction</b>
 							</td>
 							<td>
-								<input disabled type="radio" name="onoff1"
+								<input disabled type="radio" name="onoff16"
 								 />
-								<input disabled type="radio" name="onoff1" checked
+								<input disabled type="radio" name="onoff16" checked
 								/>
 							</td>
 						</tr>
