@@ -22,7 +22,7 @@ stateChanger(number, nimi, admin){
 					this.setState({innerComponent: number})
 				}
 				else{
-					alert('The password you gave is wrong, n00b.')
+					alert('The password you gave is wrong.')
 				}
 			}
 			else{
@@ -69,6 +69,7 @@ componentHandler(){
 render(){
 	return(
 		<div className="container">
+		<img src="header.png"/>
 			{this.componentHandler()}
 			
 		</div>
@@ -87,22 +88,19 @@ SmartHouseSelectionAdult = React.createClass({
 		return(
 			<div className="Adultcontainer">
 			<header>
-				<h1>Select smarthouse<button 
-										className="button-takaisin"
-										onClick={()=> this.clickHandler(0, user, !isAdministrator)}
-										>Back</button></h1>
+				<h3><img src="/back.png" 
+						className="bakki"
+						onClick={()=> this.clickHandler(0, user, !isAdministrator)}
+						/></h3>
+				<h1>Select smarthouse</h1>
 					<h2> Logged in as adult</h2>
 					<div className="login1">		
-					<button className = "button-home"
+					<img src="/home.png"
+						className="building"
 						onClick={()=>this.clickHandler(5, home, !isAdministrator)}
-						>Home
-					</button>
-					<button className ="button-cottage"
-					>Cottage (not functional)
-					</button>
-					<button className ="button-sauna"
-					>Sauna (not functional)
-					</button>
+						/>
+					<img src="/cottage.png"
+					className="building" />
 				</div>
 			</header>
 		</div>
@@ -119,20 +117,20 @@ SmartHouseSelectionChild = React.createClass({
 		const home = "the room selection as a child?"
 		const isAdministrator = true;
 		return(
-			<div className="childrenscontainer">
-			<header>
-				<h1>Select smarthouse<button 
-										className="button-takaisin"
+			<div>
+			
+				<h1>Select smarthouse<img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(0, user, !isAdministrator)}
-										>Back</button></h1>
+										/>
+					</h1>
 					<h2>Logged in as child</h2>
 					<div className="login1">		
-					<button className = "button-home"
+					<img src="/home.png"
 						onClick={()=>this.clickHandler(6, home, !isAdministrator)}
-						>Home
-					</button>
+						/>
 				</div>
-			</header>
+			
 		</div>
 			)
 	}
@@ -153,20 +151,22 @@ RoleView = React.createClass({
 					<h1>Select your role
 										</h1>
 						<span className="testing">
-       			 			<button className="button-adult"
+       			 			<button className="button-role"
        			 				onClick={()=> this.clickHandler(1, other, !isAdministrator)}
        			 			>Adult
 							</button>
-							<button className="button-child"
+							<button className="button-role"
 								onClick={()=> this.clickHandler(7, other, !isAdministrator)}
 							>Child 
+
 							</button>
-							<button className="button-admin"
+							<button className="button-role"
 								onClick={()=> this.clickHandler(2, admin, isAdministrator)}
 							>Administrator
 							</button>
 						</span>
        			</header>
+       			
       		</div>
 
 			)
@@ -179,19 +179,112 @@ AdminView = React.createClass({
 		this.props.changeState(number,nimi,admin);
 	},
 
+	getInitialState(){
+		return(
+		{button1: true},
+		{button2: true},
+		{button3: true},
+		{button4: true},
+		{button5: true},
+		{button6: true},
+		{button7: true})
+	},
+
+
 	render(){
+		let status1 = this.state.status1 ? true : false;
+		let status2 = this.state.status2 ? true : false;
+		let status11 = this.state.status11 ? true : false;
 		const rooli = "the user selection?";
 		const isAdministrator = true;
 		return(
 			<div className="mrAdmin">
-				<header>
-					<h1>Good day, sir! <button 
-										className="button-takaisin"
+					<h1>Good day, sir! <img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(0, rooli, !isAdministrator)}
-										>Back</button>
+										/>
 					</h1>
 					<h2>Logged in as administrator</h2>
-				</header>
+					<form>
+					<table>
+						<tr>
+							<td colSpan="4">
+								<b><u>User</u></b>
+							</td>
+							<td>
+								<b><u>On/Off</u></b>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="5">
+								<b>Adult</b>
+							</td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td colSpan="3">
+								<b>Home</b>
+							</td>
+							<td>
+								<input type="radio" name="onoff1"
+								checked
+								 />
+								<input type="radio" name="onoff1"
+
+								/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="2">&nbsp;</td>
+							<td colSpan="2">Children's room</td>
+							<td>
+								<input type="radio" name="onoff2"
+								checked/>
+								<input type="radio" name="onoff2"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>Lights</td>
+							<td>
+								<input type="radio" name="onoff3" checked />
+								<input type="radio" name="onoff3"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="2">&nbsp;</td>
+							<td colSpan="2">Kitchen/Living room</td>
+							<td>
+								<input type="radio" name="onoff4" checked/>
+								<input type="radio" name="onoff4"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>Lights</td>
+							<td>
+								<input type="radio" name="onoff5" checked/>
+								<input type="radio" name="onoff5"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>Oven</td>
+							<td>
+								<input type="radio" name="onoff6" checked/>
+								<input type="radio" name="onoff6"/>
+							</td>
+						</tr>
+						<tr>
+							<td colSpan="3">&nbsp;</td>
+							<td>TV</td>
+							<td>
+								<input type="radio" name="onoff7" checked/>
+								<input type="radio" name="onoff7"/>
+							</td>
+						</tr>
+					</table>
+					</form>
 			</div>
 			)
 	}
@@ -213,18 +306,18 @@ ChildrensRoomByAdult = React.createClass({
 	render(){
 		const previous = "the previous selection screen?"
 		const isAdministrator = true;
-		let lightsOn = this.state.lightsOn ? 'are on.' : 'are off.';
+		let lightsOn = this.state.lightsOn ? 'are on.' : 'are off.';	
 		return(
 			<div className="adultView">
 				<header>
-					<h1>Hello! This is the children's room.<button 
-										className="button-takaisin"
+					<h1>Hello! This is the children's room.<img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(5, previous, !isAdministrator)}
-										>Back</button>
+										/>
 					</h1>
 					<h2>Logged in as adult</h2>
 					<span>
-					<button className="button-lightsOn"
+					<button className="button-widget"
 							onClick={()=> this.lightsHandler(lightsOn)}
 					>Lights {lightsOn}
 					</button>
@@ -256,14 +349,14 @@ ChildrensRoomByChild = React.createClass({
 		return(
 			<div className="childView">
 				<header>
-					<h1>Hiya, kid!<button 
-										className="button-takaisin"
+					<h1>Hiya, kid!<img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(6, rooli, !isAdministrator)}
-										>Back</button>
+										/>
 					</h1>
 					<h2>Logged in as child</h2>
 					<span>
-					<button className="button-lightsOn"
+					<button className="button-widget"
 							onClick={()=> this.lightsHandler(lightsOn)}
 					>Lights {lightsOn}
 					</button>
@@ -282,7 +375,11 @@ KitchenlivingRoom = React.createClass({
 	},
 
 	getInitialState(){
-		return{lightsOn: false}, {valueOven: 0}, {ovenOn: false}, {tvOn: false}, {tvChannel: null}
+		return({lightsOn: false}, 
+		{valueOven: 0}, 
+		{ovenOn: false}, 
+		{tvOn: false}, 
+		{tvChannel: null})
 	},
 
 	handleOven(event){
@@ -295,12 +392,14 @@ KitchenlivingRoom = React.createClass({
 
 	setOven(event){
 		this.setState({ovenOn: !this.state.ovenOn})
+		this.setState({valueOven: 0})
 
 	},
 
 	setTV(event){
 		this.setState({tvOn: !this.state.tvOn})
-
+		this.setState({tvChannel: 1})
+		this.setState({tv1: true})
 	},
 
 	setChannel(channel){
@@ -309,7 +408,7 @@ KitchenlivingRoom = React.createClass({
 				this.setState({tv2: false})
 				this.setState({tvChannel: channel})
 			}
-			else{
+			else {
 				this.setState({tv2: !this.state.tv2})
 				this.setState({tv1: false})
 				this.setState({tvChannel: channel})
@@ -331,18 +430,18 @@ KitchenlivingRoom = React.createClass({
 		return(
 			<div className="adultroom">
 				<header>
-					<h1>Hello! This is the kitchen/living room.<button 
-										className="button-takaisin"
+					<h1>Hello! This is the kitchen/living room.<img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(5, rooli, !isAdministrator)}
-										>Back</button>
+										/>
 					</h1>
 					<h2>Logged in as adult</h2>
 					<span>
-					<button className="button-lightsOn"
+					<button className="button-widget"
 							onClick={()=> this.lightsHandler(lightsOn)}
 					>Lights {lightsOn}
 					</button>
-					<button className="button-oven"
+					<button className="button-widget"
 					onClick={()=> this.setOven()}
 					>
 					The oven {ovenText} 
@@ -362,7 +461,7 @@ KitchenlivingRoom = React.createClass({
 						step ="10"
 						/>
 						
-						<button className="button-tv"
+						<button className="button-widget"
 						onClick={()=> this.setTV()}
 						>The television is {tvText}
 						</button>
@@ -408,18 +507,18 @@ AdultRoomView = React.createClass({
 			
 			<div className ="adultContainer">
 				<header>
-					<h1>Select room<button 
-										className="button-takaisin"
+					<h1>Select room<img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(1, smarthouse, !isAdministrator)}
-										>Back</button>  </h1>
+										/></h1>
 										<h2>Logged in as adult</h2>
 						<span className="testing">
-       			 			<button className="button-childrensroom"
+       			 			<button className="button-room"
        			 				onClick={()=> this.clickHandler(3, lastenhuone, !isAdministrator)}
        			 				
        			 			>Children's room
 							</button>
-							<button className="button-kitchenlivingroom"
+							<button className="button-room"
 								onClick={()=> this.clickHandler(4, sekahuone, !isAdministrator)}
 							>Kitchen/living room 
 							</button>
@@ -447,13 +546,13 @@ ChildRoomView = React.createClass({
 			
 			<div className ="childContainer">
 				<header>
-					<h1>Select room<button 
-										className="button-takaisin"
+					<h1>Select room<img src="/back.png" 
+						className="bakki"
 										onClick={()=> this.clickHandler(7, previous, !isAdministrator)}
-										>Back</button> </h1>
+										/></h1>
 										<h2>Logged in as child</h2>
 						<span className="testing">
-       			 			<button className="button-childrensroom"
+       			 			<button className="button-room"
        			 				onClick={()=> this.clickHandler(8, lastenhuone, !isAdministrator)}
        			 				
        			 			>Children's room
